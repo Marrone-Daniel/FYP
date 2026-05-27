@@ -1,0 +1,56 @@
+image_width: 1280
+image_height: 720
+camera_name: orbbec_gemini_330
+camera_matrix:
+  rows: 3
+  cols: 3
+  data:
+  - 379.5847813443684
+  - 0.0
+  - 708.7133163305768
+  - 0.0
+  - 379.3588111267888
+  - 254.85937915110085
+  - 0.0
+  - 0.0
+  - 1.0
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data:
+  - -0.2430247218528527
+  - 1.0195143339009904
+  - -0.04010243693769698
+  - -0.021658456656356007
+  - -1.2627253178977593
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data:
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+projection_matrix:
+  rows: 3
+  cols: 4
+  data:
+  - 379.5847813443684
+  - 0.0
+  - 708.7133163305768
+  - 0.0
+  - 0.0
+  - 379.3588111267888
+  - 254.85937915110085
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  - 0.0
+mean_reprojection_error: 0.703943636349672

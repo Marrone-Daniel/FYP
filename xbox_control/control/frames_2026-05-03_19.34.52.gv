@@ -1,0 +1,37 @@
+digraph G {
+"camera_depth_frame" -> "camera_IMU_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_link" -> "camera_depth_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_mount_link" -> "camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"gripper_robotiq_85_base_link" -> "camera_mount_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_depth_frame" -> "camera_color_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_color_frame" -> "camera_color_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_link" -> "camera_color_screw_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_depth_frame" -> "camera_left_ir_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_left_ir_frame" -> "camera_left_ir_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"wrist3_link" -> "gripper_robotiq_85_base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_depth_frame" -> "camera_right_ir_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_right_ir_frame" -> "camera_right_ir_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"wrist2_link" -> "wrist3_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"gripper_robotiq_85_left_knuckle_link" -> "gripper_robotiq_85_left_finger_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"gripper_robotiq_85_base_link" -> "gripper_robotiq_85_left_knuckle_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"gripper_robotiq_85_right_knuckle_link" -> "gripper_robotiq_85_right_finger_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"gripper_robotiq_85_base_link" -> "gripper_robotiq_85_right_knuckle_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"gripper_robotiq_85_left_finger_link" -> "gripper_robotiq_85_left_finger_tip_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"gripper_robotiq_85_base_link" -> "gripper_robotiq_85_left_inner_knuckle_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"gripper_robotiq_85_right_finger_link" -> "gripper_robotiq_85_right_finger_tip_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"gripper_robotiq_85_base_link" -> "gripper_robotiq_85_right_inner_knuckle_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"base_link" -> "shoulder_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"shoulder_link" -> "upperarm_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"upperarm_link" -> "forearm_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"forearm_link" -> "wrist1_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"wrist1_link" -> "wrist2_link"[label=" Broadcaster: default_authority\nAverage rate: 14.595\nBuffer length: 5.002\nMost recent transform: 1777808092.097975\nOldest transform: 1777808087.096398\n"];
+"camera_depth_frame" -> "camera_depth_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_link" -> "astra_color_frame"[label=" Broadcaster: default_authority\nAverage rate: 20.353\nBuffer length: 4.913\nMost recent transform: 1777808092.013955\nOldest transform: 1777808087.100589\n"];
+"camera_link" -> "astra_depth_frame"[label=" Broadcaster: default_authority\nAverage rate: 10.176\nBuffer length: 4.913\nMost recent transform: 1777808092.013955\nOldest transform: 1777808087.100589\n"];
+"astra_color_frame" -> "astra_color_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10.176\nBuffer length: 4.913\nMost recent transform: 1777808092.013955\nOldest transform: 1777808087.100589\n"];
+"astra_depth_frame" -> "astra_depth_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10.176\nBuffer length: 4.913\nMost recent transform: 1777808092.013955\nOldest transform: 1777808087.100589\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1777808092.118736"[ shape=plaintext ] ;
+}->"base_link";
+}
